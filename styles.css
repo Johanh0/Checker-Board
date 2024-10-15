@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#board {
+  display: grid;
+  grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+  width: 500px;
+  height: 500px;
+}
+
+.cell {
+  width: 100%;
+  height: 100%;
+}
+
+.cell--white {
+  background-color: white;
+}
+
+.cell--black {
+  background-color: black;
+}
